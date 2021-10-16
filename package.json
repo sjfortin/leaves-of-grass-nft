@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npx hardhat run scripts/deploy.js --network rinkeby",
+    "run": "npx hardhat run scripts/run.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,7 @@
     "hardhat": "^2.6.5"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.3.2"
+    "@openzeppelin/contracts": "^4.3.2",
+    "dotenv": "^10.0.0"
   }
 }
